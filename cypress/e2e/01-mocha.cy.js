@@ -1,5 +1,5 @@
 /// <reference types="cypress"/>
-
+//il faut importer describe de cypress et non plus de mocha 
 //pour regrouper les cas de test  sous un suite de test on utilise "describe" ou "context"
 describe('login functionality',()=>{
 //before va s'executer une seule fois avant les 3 cas de test
