@@ -97,4 +97,6 @@ it.only('Find the element by text', () => {
     cy.visit('cypress/index.html');
     //Find the element by text
     cy.contains('wdio');
+    //second way to find element by text
+    cy.get('li').contains('wdio');
 })
