@@ -78,9 +78,23 @@ it('Find the element using the parent command', () => {
     cy.get('.list1.web').parent();
 })
 
-//Find the element using all the parents command
-it.only('Find the element using the parent command', () => {
+//Find the list of elements using  the parents command
+it('Find the element using the parents command', () => {
     cy.visit('cypress/index.html');
-    //Find the element using all the parents command
+    //Find the list of element using the parents command
     cy.get('.list1.web').parents();
+})
+
+//Find the elements using  the siblings (brothers) command
+it('Find the elements using the siblings command', () => {
+    cy.visit('cypress/index.html');
+    //Find the elements using  the siblings command
+    cy.get('.list1.web').siblings();
+})
+
+//Find the element by text
+it.only('Find the element by text', () => {
+    cy.visit('cypress/index.html');
+    //Find the element by text
+    cy.contains('wdio');
 })
